@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dm:DataModel
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:dm="http://www.example.org/dm"
+    xsi:schemaLocation="http://www.example.org/dm dm.ecore">
+  <class name="Car">
+    <ends name="owners"
+        opp="ownedCars"
+        target="//@class.1"
+        mult="*"/>
+    <attributes
+        name="color"
+        type="String"/>
+  </class>
+  <class name="Person">
+    <ends name="ownedCars"
+        opp="owners"
+        target="//@class.0"
+        mult="*"/>
+    <attributes
+        name="name"
+        type="String"/>
+  </class>
+</dm:DataModel>
