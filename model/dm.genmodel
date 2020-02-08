@@ -10,7 +10,10 @@
   <testsDirectory xsi:nil="true"/>
   <genPackages prefix="Dm" basePackage="org.vgu.se" disposableProviderFactory="true"
       ecorePackage="dm.ecore#/">
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="dm.ecore#//Multiplicity"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="dm.ecore#//Multiplicity">
+      <genEnumLiterals ecoreEnumLiteral="dm.ecore#//Multiplicity/one"/>
+      <genEnumLiterals ecoreEnumLiteral="dm.ecore#//Multiplicity/many"/>
+    </genEnums>
     <genClasses ecoreClass="dm.ecore#//DataModel">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dm.ecore#//DataModel/class"/>
     </genClasses>
@@ -19,11 +22,11 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dm.ecore#//Entity/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dm.ecore#//Entity/attributes"/>
     </genClasses>
-    <genClasses ecoreClass="dm.ecore#//Association">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dm.ecore#//Association/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dm.ecore#//Association/opp"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dm.ecore#//Association/target"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dm.ecore#//Association/mult"/>
+    <genClasses ecoreClass="dm.ecore#//AssociationEnd">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dm.ecore#//AssociationEnd/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dm.ecore#//AssociationEnd/opp"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dm.ecore#//AssociationEnd/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dm.ecore#//AssociationEnd/mult"/>
     </genClasses>
     <genClasses ecoreClass="dm.ecore#//Attribute">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dm.ecore#//Attribute/name"/>

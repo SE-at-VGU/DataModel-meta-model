@@ -6,13 +6,13 @@
         eType="#//Entity" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Entity">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="ends" upperBound="-1" eType="#//Association"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ends" upperBound="-1" eType="#//AssociationEnd"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="attributes" upperBound="-1"
         eType="#//Attribute" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Association">
+  <eClassifiers xsi:type="ecore:EClass" name="AssociationEnd">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="opp" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
