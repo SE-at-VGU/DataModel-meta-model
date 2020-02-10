@@ -14,10 +14,10 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AssociationEnd">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="opp" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
         eType="#//Entity"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="mult" eType="#//Multiplicity"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="opp" lowerBound="1" eType="#//AssociationEnd"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Attribute">
     <eAnnotations source="http://www.obeo.fr/dsl/dnc/archetype">
